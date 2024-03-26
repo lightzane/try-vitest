@@ -1,0 +1,19 @@
+{
+  "name": "try-vitetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.ts",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.4.0",
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
+  }
+}
