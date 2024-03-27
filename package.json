@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node src/index.ts",
     "test": "vitest",
-    "test:cov": "vitest run --coverage"
+    "test:nowatch": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "test:cov:watch": "vitest --coverage"
   },
   "keywords": [],
   "author": "",

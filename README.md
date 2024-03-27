@@ -19,10 +19,16 @@ Quickly trying out [vitest][vitest] for the very first time with the **minimal s
   "scripts": {
     "start": "node src/index.ts",
     "test": "vitest",
-    "test:cov": "vitest run --coverage"
+    "test:nowatch": "vitest run",
+    "test:cov": "vitest run --coverage",
+    "test:cov:watch": "vitest --coverage"
   }
 }
 ```
+
+By default, `vitest` is using **watch** mode.
+
+Use `vitest run` to run only once **without** watch mode.
 
 ### `sum.ts`
 
