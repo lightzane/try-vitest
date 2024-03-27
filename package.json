@@ -7,8 +7,8 @@
     "start": "node src/index.ts",
     "test": "vitest",
     "test:nowatch": "vitest run",
-    "test:cov": "vitest run --coverage",
-    "test:cov:watch": "vitest --coverage"
+    "test:cov": "vitest --coverage",
+    "test:cov:nowatch": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",

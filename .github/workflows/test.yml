@@ -8,6 +8,8 @@ jobs:
   vitest-with-coverage:
     name: Vitest with coverage
     runs-on: ubuntu-latest
+    env:
+      ci: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,4 +24,5 @@ jobs:
         run: npm ci
 
       - name: Run tests with coverage
-        run: npx vitest run --coverage
+        run: npx vitest --coverage
+      # Note: env.ci is set to true, so this will only run once without watch mode

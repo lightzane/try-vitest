@@ -1,10 +1,14 @@
 # Try Vitest
 
+![vitest logo](https://vitest.dev/logo-shadow.svg)
+
 [vitest]: https://vitest.dev/
 
 https://vitest.dev/
 
 Quickly trying out [vitest][vitest] for the very first time with the **minimal setup**. Vitest is a unit testing framework similar to [Jest](https://jestjs.io/)
+
+But it's **fast**!
 
 ## Getting Started
 
@@ -20,15 +24,22 @@ Quickly trying out [vitest][vitest] for the very first time with the **minimal s
     "start": "node src/index.ts",
     "test": "vitest",
     "test:nowatch": "vitest run",
-    "test:cov": "vitest run --coverage",
-    "test:cov:watch": "vitest --coverage"
+    "test:cov": "vitest --coverage",
+    "test:cov:nowatch": "vitest run --coverage"
   }
 }
 ```
 
-By default, `vitest` is using **watch** mode.
+- By default, `vitest` is using **watch** mode.
 
-Use `vitest run` to run only once **without** watch mode.
+- Use `vitest run` to run only once **without** watch mode.
+
+- **--OR--** set env variable `CI=true` and everything will run without watch mode
+  - **Windows**:
+    - `SET ci=true`
+    - `npx vitest` will now run only once without watch mode
+  - **Mac**:
+    - `ci=true npx vitest`
 
 ### `sum.ts`
 
